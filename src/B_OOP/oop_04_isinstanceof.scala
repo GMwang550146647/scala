@@ -1,4 +1,4 @@
-package OOP
+package B_OOP
 //isinstanceof ->该类或者子类对象 -> true
 // classOf     ->只能是该类      -> true
 object oop_04_isinstanceof {

@@ -1,4 +1,4 @@
-package OOP
+package B_OOP
 /*
 抽象类 ：包含抽象方法的类
 抽象方法 ： 没有结构体的方法

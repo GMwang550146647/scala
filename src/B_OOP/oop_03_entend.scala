@@ -1,4 +1,4 @@
-package OOP
+package B_OOP
 
 /*
 对象继承

@@ -18,7 +18,14 @@ object trait_01_fundamental {
     //3.多继承(object 继承 trait)
     CL.log("log:object 继承 trait")
     CL.warn("warning:object 继承 trait")
+
+    //4.继承（trait 继承 class)
+    val lg=new myLogger
+    lg.printMsg()
+
   }
+
+
 
 
 
@@ -51,4 +58,11 @@ object trait_01_fundamental {
 
     override def warn(msg: String): Unit = println(s"控制台警告:$msg")
   }
+
+  //继承（trait 继承 class)
+  class Message{
+    def printMsg()=println("学好scala，走到哪里都不怕")
+  }
+  trait Logger1 extends Message
+  class myLogger extends Logger1
 }

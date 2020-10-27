@@ -1,6 +1,6 @@
 package A_Projects
 
-object A_OOP_animal {
+object B_OOP_animal {
   def main(args: Array[String]): Unit = {
     val c=new Cat
     c.name="伽菲猫"

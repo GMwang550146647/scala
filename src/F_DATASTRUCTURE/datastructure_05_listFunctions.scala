@@ -19,11 +19,11 @@ diff     差集
 
 object datastructure_05_listFunctions {
   def main(args: Array[String]): Unit = {
-    val list1=List(1,2,3,4,5)
+    val list1=List(1,1,2,3,4,5,6,6)
     //1.isEmpty  是否空
     println(s"isEmpty:${list1.isEmpty}")
     //2.++       list拼接
-    val list2=List(1,2,3,4,5)++List(3,4,5,6,7,8)
+    val list2=List(4,5,6)++List(6,7,8)
     println(s"++:${list2}")
     //3.head     第一个元素
     println(s"head:${list1.head}")
@@ -42,12 +42,25 @@ object datastructure_05_listFunctions {
     //9.zip      两个列表合成一个（拉链）
     val lt1=List(1,2,3,4,5)
     val lt2=List(11,22,33,44,55)
-//    val list9=
+    val list9=lt1.zip(lt2)
+    println(s"zip:${list9}")
     //10.unzip    一个列表拆成两个（拆链）
+    val tuple1=list9.unzip
+    println(s"unzip:${tuple1}")
     //11.toString 转换成字符串
+    println(s"toString:${list1.toString()}")
     //12.mkString 转换为指定字符串格式
+    println(s"mkString:${list1.mkString(";")}")
     //13.union    并集
-    //14.interset 交集
+    val unionList=list1.union(list2).distinct
+    println(s"unionList:${unionList}")
+    //14.intersect 交集
+    val intersectList=list1.intersect(list2).distinct
+    println(s"intersectList:${intersectList}")
     //15.diff     差集
+    val diffList1=list1.diff(list2).distinct
+    val diffList2=list2.diff(list1).distinct
+    println(s"diff 1 - 2:${diffList1}")
+    println(s"diff 2 - 1:${diffList2}")
   }
 }

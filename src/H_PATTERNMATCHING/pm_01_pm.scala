@@ -29,7 +29,7 @@ import scala.io.StdIn
 
 
  */
-object pm_01_pm1 {
+object pm_01_pm {
   def main(args: Array[String]): Unit = {
     //1.常量匹配
     val s1="hadoop"
@@ -71,17 +71,33 @@ object pm_01_pm1 {
     }
 
     //4.样例类
-    val c4:Any=Customer("gmwng",99)
+    val c4:Any=Customer("gmwang",99)
     val result4 =c4 match{
       case Customer(a,b) =>println(s"Customer类型对象，name=${a},age=${b}")
       case Order(a) => println(s"Order类型对象，id=${a}")
       case _=>println("未匹配")
     }
 
-    //5.
+    //5.数组
+    val arr1=Array(1,2,3)
+    val arr2=Array(0)
+    val arr3=Array(0,1,2,3,4,5)
+    val result5=arr3 match{
+      case Array(1,x,y)=>println(s"匹配到数组，总个数}是3，首元素是1，其他两个元素无所谓:${x},${y}")
+      case Array(0) => println("匹配到数组，长度为1，只有一个元素")
+      case Array(0,_*) =>println("匹配到数组，以元素0开头，后面多少个无所谓")
+      case _ =>println("未匹配")
+    }
+    //6.列表
+    var list61=List(1,2,3,4,5)
+    val list62=List(2,3,3,4,6)
+    list62++= list61
+    println(list61)
+    //7.元组
   }
   //4.样例类
   case class Customer(name:String,age:Int)
   case class Order(id:Int)
+
 
 }

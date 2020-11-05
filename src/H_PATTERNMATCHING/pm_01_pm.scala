@@ -129,13 +129,21 @@ object pm_01_pm {
 //    for ((k,v) <- map9 if v==23) println(k,v) //功能同下
     for ((k,23) <- map9) println(k,23)
 
-    //10.
+    //10.option 类型
+    val result10=divide(10,0)
+
   }
 
 
   //4.样例类
+
+
   case class Customer(name: String, age: Int)
   case class Order(id: Int)
-
-
+  //10.option 类型
+  //方法1
+  def divide(a:Int,b:Int)={
+    if (b==0) None
+    else Some(a/b)
+  }
 }

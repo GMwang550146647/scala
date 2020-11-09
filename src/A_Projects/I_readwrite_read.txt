@@ -1,0 +1,4 @@
+someone 10      20      30
+gmwang  100     99      110
+nobody  99      90      10
+feifei  100     98      120

@@ -1,4 +1,4 @@
-package G_FUNCTIONCODING
+package G_FUNCTIONPROGRAMMING
 /*
 fold:与reduce 的区别只是 其有初始值
 格式

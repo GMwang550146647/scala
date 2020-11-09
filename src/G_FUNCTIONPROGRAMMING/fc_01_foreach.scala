@@ -1,4 +1,4 @@
-package G_FUNCTIONCODING
+package G_FUNCTIONPROGRAMMING
 /*
 foreach
 （与map唯一不一样的就是foreach只操作，不返回）

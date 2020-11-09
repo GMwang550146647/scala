@@ -1,4 +1,4 @@
-package G_FUNCTIONCODING
+package G_FUNCTIONPROGRAMMING
 /*
 格式
   def reduce[A1 >: A](op:(A1,A1) => A1):A1

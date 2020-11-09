@@ -1,4 +1,4 @@
-package G_FUNCTIONCODING
+package G_FUNCTIONPROGRAMMING
 /*
 foreach   遍历集合
 map       集合转换

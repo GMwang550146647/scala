@@ -1,4 +1,4 @@
-package G_FUNCTIONCODING
+package G_FUNCTIONPROGRAMMING
 /*
 格式
   def groupBy[K](f:(A) =>K): Map[K,List[A]]

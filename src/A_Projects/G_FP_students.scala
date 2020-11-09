@@ -1,6 +1,6 @@
 package A_Projects
 
-object G_students {
+object G_FP_students {
   def main(args: Array[String]): Unit = {
     val stuList=List(("gmwang",90,73,23),("feifei",99,88,70),("nobody",100,9,90),("someone",100,0,20))
     //1.获取语文成绩大于等于70
